@@ -1,0 +1,202 @@
+html, body{
+    height: 100%;
+}
+
+
+body {background-color: rgb(93, 67, 37);
+    font-family:  Arial, Helvetica, sans-serif;
+    color:white;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+header { 
+    background-color: rgb(223, 192, 139);
+    padding: 10px 0; 
+    
+    
+}
+
+
+#main-logo { 
+    width: 300px;
+    display: block;
+    margin: 0 auto; 
+}
+
+.hidden { 
+    display: none;
+}
+
+#character_nav{
+    background-color:  rgb(116, 82, 45);
+    background-image: url('../images/back2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    margin-top: -20px;
+}
+.characters { 
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.characters li {
+
+    height: 200px;
+    margin: 10px 8px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 155px 0 rgb(223, 192, 139) inset;
+    transition: box-shadow .2s ease;
+}
+
+.characters li:hover{
+    box-shadow: 0 220px 0 rgb(223, 192, 139) inset;
+}
+
+
+.characters li h5 {
+    color:white;
+    padding: 12px 8px;
+}
+
+article, #instructions { 
+    padding: 20px;
+}
+
+article h3, #instructions h3 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+article p,#instructions p{
+    font-size: 18px;
+    text-align: center;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/sprite.jpg');
+}
+
+#lanter {background-position: 0px 0;}
+#super {background-position: -150px 0;}
+#wonder {background-position: -300px 0;}
+#bat {background-position: -450px 0;}
+#flash {background-position: -600px 0;}
+
+#lanter:hover, #super:hover, #wonder:hover, #bat:hover, #flash:hover {
+    background-position-y: 150px;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sticky_footer {
+    height: 80px;
+    background-color: rgb(49, 95, 159);
+    position: sticky;
+    top: 100%;
+}
+
+
+
+
+
+
+.lightbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.85);
+    background-image:url('../images/lightbox_greenlantern.png') ;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position:40px bottom ;
+    display: none;
+    
+}
+
+
+#lightbox2{
+    
+    background-image: url('../images/lightbox_wonderwomen.png');
+   
+    
+}
+
+#lightbox3{
+    background-image: url('../images/lightbox_superman.png');
+}
+#lightbox4{
+    background-image: url('../images/lightbox_flash.png');
+
+}
+#lightbox5{
+    background-image: url('../images/lightbox_bat.png');
+}
+
+
+
+.lightbox_close {
+    position: absolute;
+    top: 20px;
+    right: 5%;
+
+    color: white;
+    font-size: 36px;
+
+    text-decoration: none;
+    font-weight: bolder;
+
+    transition: all 0.5 ease-in-out;
+}
+
+.lightbox_close:hover {
+    opacity: 0.5;
+    color: red;
+}
+
+.lightbox article{
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading {
+    text-align: left;
+}
+#lb_green{
+    color:rgb(49, 159, 91); 
+}
+#lb_yellow{
+    color:rgb(209, 176, 43); 
+}
+#lb_blue{
+    color:rgb(42, 104, 199); 
+}
+#lb_red{
+    color:rgb(199, 41, 41); 
+}
+#lb_black{
+    color:rgb(88, 88, 88); 
+}
+
+.lb_text{
+    line-height: 26px;
+}
+
+.lightbox:target{
+    display: block;
+}
